@@ -1,0 +1,98 @@
+    1  touch new_file
+    2  sort -r -m new_file new_file.sorted
+    3  sort -r -m new_file > new_file.sorted
+    4  sort -r new_file > new_file.sorted
+    5  whoami
+    6  hostname
+    7  man
+    8  hostnam
+    9  hostnem
+   10  hostname
+   11  man ls
+   12  man man
+   13  man --help
+   14  less new_file
+   15  head new_file
+   16  tail new_file
+   17  man -h head
+   18  more new_file
+   19  less new_file
+   20  head new_file
+   21  tail new_file
+   22  tail new_file.sorted
+   23  tail new_file
+   24  tail -n 2 new_file
+   25  tail -n 1 new_file
+   26  head -n 1 new_file
+   27  head -n 3 new_fikle
+   28  head -n 3 new_file
+   29  sort -r new_file > new_file.sorted
+   30  ls > list.txt
+   31  head -n 3 < file.txt
+   32  head -n 3 < new_file
+   33  head -n 3 < new_file.sorted
+   34  head -n 3 < list.txt
+   35  ls | sort -3 | tail -n 3
+   36  ls | sort -r | tail -n 3
+   37  grep driver /proc
+   38  grep driver proc
+   39  grep driver /proc
+   40  grep driver /proc/
+   41  grep driver 
+   42  grep driver proc
+   43  ls proc
+   44  ls
+   45  grep driver /proc > output_file
+   46  ls proc
+   47  grep driver /proc
+   48  clear
+   49  grep "driver"
+   50  ls
+   51  grep -r driver /proc
+   52  pwd
+   53  ls
+   54  mkdir new_dir
+   55  ls
+   56  rm new_dir
+   57  ls
+   58  rm -r new_dir
+   59  find -name "driver"
+   60  find -name "driver" /proc
+   61  find /proc -name "driver"
+   62  find /proc -name "driver" 2> error.txt
+   63  find /proc -name "driver" > output.txt
+   64  find /proc -name "driver" 2> error.txt 
+   65  ls -R /proc > /dev/null
+   66  ls /proc -name "driver" 2> error.txt
+   67  rm -r new_dir
+   68  mkdir new_dir
+   69  rm -r new_dir
+   70  ls
+   71  ls -l
+   72  echo ji
+   73  echo
+   74  jobs
+   75  fg
+   76  fg %1
+   77  mkdir ~/week1
+   78  cd ~/week1
+   79  find -name "gcc" > gcc_result
+   80  find -name "gcc" > gcc_result.txt
+   81  [200~mkdir ~/week1 ~
+   82  mkdir ~/week1
+   83  ls /usr/bin | tail -n 5 | grep z | sort -r > ~/week/ex1.txt
+   84  ls /ust/bin | tail -n 5 | grep z | sort -r > ~/week1/ex1.txt
+   85  ls /usr/bin | tail -n 5 | grep z | sort -r > ~/week1/ex1.txt
+   86  touch ex1.sh
+   87  ls ~/week1
+   88  touch ex1.sh
+   89  cd ~/week1
+   90  touch ex1.sh
+   91  ls
+   92  q
+   93  cd
+   94  ls /usr/bin | tail -n 5 | find -name "gcc" | sort -r > ~/week/ex1.txt
+   95  ls /usr/bin | tail -n 5 | find -name "gcc" | sort -r > ~/week1/ex1.txt
+   96  mkdir new_dir
+   97  history
+   98  history > ~/week1/ex2.txt
