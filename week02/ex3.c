@@ -42,7 +42,7 @@ void convert(long long number, int source_system, int target_system){
 	int digit = 0;
 	
 	//checking correctness
-	if ((source_system > 9) || (source_system < 2) || (target_system > 9) || (target_system < 2)){
+	if ((source_system > 10) || (source_system < 2) || (target_system > 10) || (target_system < 2)){
 		printf("cannot convert!");
 		return;
 	}	
