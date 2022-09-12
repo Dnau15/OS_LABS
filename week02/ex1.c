@@ -4,7 +4,7 @@
 int main(){
    int int_var;
    unsigned short uns_short_var;
-   signed long sign_long_var;
+   signed long int sign_long_var;
    float float_var;
    double double_var;
    int_var = INT_MAX;
