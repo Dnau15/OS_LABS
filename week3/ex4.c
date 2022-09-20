@@ -81,9 +81,9 @@ int main(){
     *initial_value_int = 0;
     int *int_one = (int*)malloc(sizeof(int));
     *int_one = 1;
-    int* outputult1a = aggregate(&ints, sizeof(int), 5, initial_value_int, addInt);
-    int* outputult2a = aggregate(&ints, sizeof(int), 5, int_one, mulInt);
-    int* outputult3a = aggregate(&ints, sizeof(int), 5, initial_value_int, meanInt);
+    int* output1a = aggregate(&ints, sizeof(int), 5, initial_value_int, addInt);
+    int* output2a = aggregate(&ints, sizeof(int), 5, int_one, mulInt);
+    int* output3a = aggregate(&ints, sizeof(int), 5, initial_value_int, meanInt);
     
     double doubls[] = {1.0,2.0,3.0,4.0,5.0};
     double *initial_value_double = (double*)malloc(sizeof(double));
@@ -91,14 +91,14 @@ int main(){
     double *double_one = (double*)malloc(sizeof(double));
     *double_one = 1.0;
 
-    double* outputult4a = aggregate(&doubls, sizeof(double), 5, initial_value_double, addDouble);
-    double* outputult5a = aggregate(&doubls, sizeof(double), 5, double_one, mulDouble);
-    double* outputult6a = aggregate(&doubls, sizeof(double), 5, initial_value_double, meanDouble);
+    double* output4a = aggregate(&doubls, sizeof(double), 5, initial_value_double, addDouble);
+    double* output5a = aggregate(&doubls, sizeof(double), 5, double_one, mulDouble);
+    double* output6a = aggregate(&doubls, sizeof(double), 5, initial_value_double, meanDouble);
     
-    printf("%d\n", *outputult1a);
-    printf("%d\n", *outputult2a);
-    printf("%d\n", *outputult3a);
-    printf("%f\n", *outputult4a);
-    printf("%f\n", *outputult5a);
-    printf("%f\n", *outputult6a);
+    printf("%d\n", *output1a);
+    printf("%d\n", *output2a);
+    printf("%d\n", *output3a);
+    printf("%f\n", *output4a);
+    printf("%f\n", *output5a);
+    printf("%f\n", *output6a);
 }
