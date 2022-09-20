@@ -6,36 +6,36 @@ void* aggregate(void* base, size_t size, int n, void* initial_value,
     void* (*opr)(const void*, const void*));
 
 void* addInt(const void* a, const void* b){
-    int _a = *(int*) a;
-    int _b = *(int*) b;
+    int fst = *(int*) a;
+    int sec = *(int*) b;
     int *output = (int*) malloc(sizeof(int));
 
-    *output = (_a + _b);
+    *output = (fst + sec);
     return (void*)output;   
 }
 
 void* addDouble(const void* a, const void* b){
-    double _a = *(double*) a;
-    double _b = *(double*) b;
+    double fst = *(double*) a;
+    double sec = *(double*) b;
     
     double *output = (double*) malloc(sizeof(double));
-    *output = _a + _b;
+    *output = fst + sec;
     return (void*)output;
 }
 
 void* mulInt(const void* a, const void* b){
-    int _a = *(int*) a;
-    int _b = *(int*) b;
+    int fst = *(int*) a;
+    int sec = *(int*) b;
     int *output = (int*) malloc(sizeof(int));
-    *output = _a * _b;
+    *output = fst * sec;
     return (void*)output;
 }
 
 void* mulDouble(const void* a, const void* b){
-    double _a = *(double*) a;
-    double _b = *(double*) b;
+    double fst = *(double*) a;
+    double sec = *(double*) b;
     double *output = (double*) malloc(sizeof(double));
-    *output = _a * _b;
+    *output = fst * sec;
     return (void*)output;
 }
 
@@ -71,7 +71,7 @@ void* aggregate(void* base, size_t size, int n, void* initial_value, void* (*opr
         base += size;
         output = (*opr)(output, base);
     }
- return output;
+    return output;
 }
 
 
@@ -81,6 +81,7 @@ int main(){
     *initial_value_int = 0;
     int *int_one = (int*)malloc(sizeof(int));
     *int_one = 1;
+    // outputs for int
     int* output1a = aggregate(&ints, sizeof(int), 5, initial_value_int, addInt);
     int* output2a = aggregate(&ints, sizeof(int), 5, int_one, mulInt);
     int* output3a = aggregate(&ints, sizeof(int), 5, initial_value_int, meanInt);
@@ -91,6 +92,7 @@ int main(){
     double *double_one = (double*)malloc(sizeof(double));
     *double_one = 1.0;
 
+    //outputs for double
     double* output4a = aggregate(&doubls, sizeof(double), 5, initial_value_double, addDouble);
     double* output5a = aggregate(&doubls, sizeof(double), 5, double_one, mulDouble);
     double* output6a = aggregate(&doubls, sizeof(double), 5, initial_value_double, meanDouble);
