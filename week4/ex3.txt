@@ -1,0 +1,2 @@
+After each fork number of processes multiplied by 2. 
+Number of processes equals to 2^n. 
