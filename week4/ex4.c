@@ -18,6 +18,5 @@ int main(){
             system(command);
             exit(0);
         }
-        wait(NULL);
     }
 }
