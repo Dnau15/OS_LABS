@@ -4,4 +4,4 @@ gcc subscriber.c -o sub.out
 
 rm -f /tmp/ex1 
 
-./ch.out 2
+./ch.out $1
