@@ -52,18 +52,13 @@ int main(int argc, char* argv[]){
         int *interval = (int*)calloc(2, sizeof(int));
         interval[0] = from;
         interval[1] = to;
-        pthread_create(&(thr_id[i]), NULL, primes_count, interval);
-
-        // void * loc_amount = NULL;
-        // pthread_join(thr_id[i], &loc_amount);
-        // count += *(int*)loc_amount;
-        
+        pthread_create(&(thr_id[i]), NULL, primes_count, interval);        
     }
     
     for (int i = 0;i < m;i++){
-    	void * loc_amount = NULL;
-        pthread_join(thr_id[i], &loc_amount);
-        count += *(int*)loc_amount;
+    	void * local_amount = NULL;
+        pthread_join(thr_id[i], &local_amount);
+        count += *(int*)local_amount;
     }
     
     printf("%d\n", count);
