@@ -1,0 +1,2 @@
+The result stays the same. It does not depend on the number of threads. Therefore, our computations are correct. We can see that the speed increases as
+the number of threads increases because we compute amount of prime numbers "simultaneously". 
