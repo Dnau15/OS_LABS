@@ -1,1 +1,2 @@
 In the round robin algorithm each process is constantly "running"
+This algorithm improves average response times.
