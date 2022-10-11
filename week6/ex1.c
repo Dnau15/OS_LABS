@@ -13,8 +13,9 @@ int main(){
     
     double arrival_time[n];
     double burst_time[n];
-    printf("Enter the arrival time of each process\n");
+    printf("Enter the number of processes\n");
     scanf("%d", &n);
+    printf("Enter the arrival time of each process\n");
     for (int i = 0;i < n;i++){
         scanf("%lf", &arrival_time[i]);
     }
