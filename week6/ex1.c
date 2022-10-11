@@ -10,14 +10,15 @@ void print_ar(double ar[], int n);
 
 int main(){
     int n;
-    scanf("%d", &n);
+    
     double arrival_time[n];
     double burst_time[n];
-    printf("Enter the arrival time of each process");
+    printf("Enter the arrival time of each process\n");
+    scanf("%d", &n);
     for (int i = 0;i < n;i++){
         scanf("%lf", &arrival_time[i]);
     }
-    printf("Enter the burst time of each process");
+    printf("Enter the burst time of each process\n");
     for (int i = 0;i < n;i++){
         scanf("%lf", &burst_time[i]);
     }
