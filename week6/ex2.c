@@ -52,8 +52,10 @@ Process get_min(quesort *processes){
 
 int main() {
     int n;
+    printf("Enter the number of processes\n");
     scanf("%d", &n);
     Process processes[n];
+    printf("Enter the arrival time and burst time of each process\n");
     for(int i = 0; i < n; i++){
         scanf("%lf%lf", &processes[i].arrival_time, &processes[i].burst_time);
     }
