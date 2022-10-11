@@ -20,10 +20,10 @@ typedef struct quesort {
     int len;
 } quesort;
 
-void swap(Process *processes, Process *b){
-    Process x = *processes;
-    *processes = *b;
-    *b = x;
+void swap(Process *process1, Process *process2){
+    Process temp_process = *process1;
+    *process1 = *process2;
+    *process2 = temp_process;
 }
 
 void add(quesort * processes, Process b){
