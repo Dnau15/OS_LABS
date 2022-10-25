@@ -1,0 +1,2 @@
+   text	   data	    bss	    dec	    hex	filename
+   5470	    640	      8	   6118	   17e6	/home/dima/Desktop/OS_Labs/week6/ex2.out
