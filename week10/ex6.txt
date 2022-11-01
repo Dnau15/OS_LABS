@@ -1,0 +1,3 @@
+2^16 / 8 / 2 ^10 = 2^3
+Therefore, 3 bits needed for a single-level linear page table.
+Answer: 3 bits

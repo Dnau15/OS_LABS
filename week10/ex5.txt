@@ -1,0 +1,4 @@
+The difference between physical address and virtual address.
+The physical address of the memory is real location in memory(memory unit). 
+The virtual address does not show real location in memory(in real memory). It points to location of the required "box" in the computer's main memory.
+
