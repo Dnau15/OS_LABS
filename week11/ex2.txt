@@ -1,0 +1,11 @@
+We can construct the following sequences:
+1) 1 1 1 1 1 1 1 1 1... It will result in increased Hit/Miss ratio.
+2) 1 1 1 2 3 4 5 6 7... It will result in decreased Hit/Miss ratio.
+In the first case we always hit(except the first time). Firstly, we have empty memory. Then we put 1 in our memory and then we 
+are looking for 1 in our memory. We have found 1 in our memory. It's hit. OK. We will do the same thing many times.
+Therefore, our ratio will increase each time.
+In the second case we always miss(except the second and third time). As I said before, firstly we have empty memory. Then we put 1 in our 
+memory and then we are looking for 1. We have found 1. It's hit. Then we read next reference. It's 1. We have found 1 in our memory. It's hit. Then we 
+read next reference. We are looking for 2. We have not found it in our memory. Therefore, it's miss. We increase miss rate. And then we do the same thing, 
+as with 2, with 3, 4, 5, 6, 7...
+Therefore, our ratio will decrease each time.
