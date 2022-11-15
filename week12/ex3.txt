@@ -1,0 +1,6 @@
+-rw-rw-r-- 1 dima dima 7 ноя 15 21:26 _ex3.txt
+-rwx---rwx 1 dima dima 7 ноя 15 21:26 _ex3.txt
+-rwxrwxrwx 1 dima dima 7 ноя 15 21:26 _ex3.txt
+660 owner, group members can write and read the file, others can't
+775 owner can read, write, execute, group members and others can read, execute
+777 all can read, write, execute
