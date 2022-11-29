@@ -1,0 +1,10 @@
+Shortcuts:
+P+E--> I passed the Exam!
+C+A+P--> Get some cappuccino!
+A+B--> A grade
+pI passed the Exam!
+ca“Get some cappuccino!
+aA grade
+A grade
+bA grade
+
