@@ -46,7 +46,7 @@
     
    Direct memory access, or dma1, is a technology that lets some devices access RAM without a CPU.
 
-A peripheral interface controller, a type of microcontroller used in the development of computers and other connected devices, is shown in picture 1.
+A peripheral interface controller, a type of microcontroller used in the development of computers and other connected devices.
 
 One of the two timers on the microcontroller is timer1.
 They can be used with timers and counters. 
