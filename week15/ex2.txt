@@ -1,0 +1,11 @@
+There are 3 strategies of dealing with deadlocks:
+- recovery
+- prevention
+- avoidance
+
+1) Recovery. Let deadlocks occur, detect them, and take action. Possible methods (Preemption, Rollback, Killing processes)
+Recovery through killing process is  the simplest strategy, therefore it might be better than others if we want to solve problem extremely fast. However, we should carefully choose "victim".
+2) Avoidance by careful resource allocation. We should use this method when the system will not enter an unsafe state.
+3) Prevention, by structurally negating one of the four required conditions. (Mutual-Exclusion, Hold-and-Wait, No-Preemption, Circular wait). 
+We should use this strategy when we are sure that at least one of the required conditions for creating deadlock will never be met.
+
