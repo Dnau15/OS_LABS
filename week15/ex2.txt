@@ -8,6 +8,7 @@ Recovery through killing process is  the simplest strategy, therefore it might b
 because it is holding resources that some process in the cycle needs. Recovery is a good strategy when we can kill process, temporarily take a resource away from its current owner and give it to another process or return to the previous state. User can use recovery if he could not avoid or prevent deadlock.
 
 2) Avoidance by careful resource allocation. We should use this method when the system will not enter an unsafe state.
+The system must be able to decide whether granting a resource is safe or not and make the allocation only when it is safe.
 
 3) Prevention, by structurally negating one of the four required conditions. (Mutual-Exclusion, Hold-and-Wait, No-Preemption, Circular wait). 
 We should use this strategy when we are sure that at least one of the required conditions for creating deadlock will never be met.
